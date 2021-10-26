@@ -23,7 +23,7 @@ def index():
     ]
 
     registerdgpbot_key = [
-        [InlineKeyboardButton("➡️ Join DGPBot", url='https://dgpbot.com/register')]
+        [InlineKeyboardButton("➡️ Join DGPBot", callback_data="join_dgpbot")]
     ]
 
     tutorial_key = [
@@ -99,6 +99,9 @@ def index():
             query.message.reply_photo(photo='https://blogger.googleusercontent.com/img/a/AVvXsEg4neIpMbL2FEM7FAby9N8C7zab7SK3Ln9Vp-gGcRrF6R7ypl_vjOH1srQ2toHMNl0JP6GLtAbaz5NPNegot43uqqhGC2lGWl2-yBn1Lb-sR8ExDszuiGj0oiQMUOpNubYtoN60jI3pNm3j6EpjKjwsnfSJB5Lisskdy9rV-Yy2n_b2vyIW9RJW4SXiwQ=s381')
             query.message.reply_text(text="<b>→ Information → Language → Choose whichever language you want to use.</b>", parse_mode=telegram.ParseMode.HTML)
 
+        elif 'join_dgpbot' == query.data:
+            query.message.reply_text(text="<b>Join dgpbot maintenance..</b>", parse_mode=telegram.ParseMode.HTML)
+            
         elif 'set_btc_per_buy' == query.data:
             query.message.reply_text(text="<b>How to Set BTC per buy</b>\n\nYou need to set a BTC per buy value for the bot to place order when in signal. This value is very important and depends on the risk appetite of the users. It is recommended to set 1/20 of your total balance as the optimal value.\n\n<b>To set BTC per buy, simply write <b>setBuy</b> 0.003</b>\n<b>This will set your BTC per buy = 0.003</b>", parse_mode=telegram.ParseMode.HTML)
         
