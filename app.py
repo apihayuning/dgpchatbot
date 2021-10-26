@@ -100,7 +100,7 @@ def index():
             query.message.reply_text(text="<b>→ Information → Language → Choose whichever language you want to use.</b>", parse_mode=telegram.ParseMode.HTML)
 
         elif 'join_dgpbot' == query.data:
-            query.message.reply_text(text="<b>Join dgpbot maintenance..</b>", parse_mode=telegram.ParseMode.HTML)
+            query.message.reply_text(text="<b>Join DGPBOT</b>\n\nSTEPS TO JOIN @DGPTrading_MF_bot\nPLEASE type or click @DGPTrading_MF_bot\nThen Please  type :\n/id\n\nAFTER YOU REGISTER @DGPTrading_MF_bot\nPLEASE SUBMIT THE FF TO OUR EMAIL: mfdgpbot@gmail.com\n\n1. The screenshot of your payment\n2. Your  Picture ID with Selfie\n3. The Bot ID of  @DGPTrading_MF_bot\n4. Your Phone number\n\nWe will verify the payment once verified we will activate your bot 🤖 package\nPlease choose a package and send your payment to\nCompany USDT address TRC20 network:\n\n<b>TJuH2Ssdn5nGC5We6GP3BiWvp5Qq5MwUha</b>", parse_mode=telegram.ParseMode.HTML)
             
         elif 'set_btc_per_buy' == query.data:
             query.message.reply_text(text="<b>How to Set BTC per buy</b>\n\nYou need to set a BTC per buy value for the bot to place order when in signal. This value is very important and depends on the risk appetite of the users. It is recommended to set 1/20 of your total balance as the optimal value.\n\n<b>To set BTC per buy, simply write <b>setBuy</b> 0.003</b>\n<b>This will set your BTC per buy = 0.003</b>", parse_mode=telegram.ParseMode.HTML)
